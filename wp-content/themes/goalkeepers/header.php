@@ -8,7 +8,6 @@
  *
  * @package GoalKeepers
  */
-$page = 'header';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -29,7 +28,7 @@ $page = 'header';
         <nav class="container">
             <div class="row">
                 <div class="col-lg-3 logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="<?php bloginfo('template_directory');?>/img/Logo-GoalKeepers.svg" alt="GoalKeepers Logo"><img src="<?php bloginfo('template_directory');?>/img/Text-Logo-GoalKeepers.svg" alt="GoalKeepers Logo in Text">
                     </a>
                 </div>
