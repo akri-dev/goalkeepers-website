@@ -968,19 +968,17 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
-/* Custom Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* CSS Reset */
-#wrapper-div {
-    margin: 0;
+body {
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
-    font-family: 'Inter', sans-serif;
-    background-color: #EDF2EB;
-    color: #252525;
+    font-family: 'Inter', sans-serif !important;
+    background-color: #EDF2EB !important;
+    color: #252525 !important;
 } 
 
 /* navigation bar */
@@ -996,34 +994,63 @@ nav {
 }
 
 .logo img:nth-child(1) {
-    width: 3.5em;
+    width: 2.5em;
 }
-
+    
 .logo img:nth-child(2) {
-    margin-left: 12px;
-    width: 10em;
+    margin-left: 8px;
+    width: 8em;
 }
-
+    
 /* navigation links */
 .nav-links {
     padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: right;
-}
-
-.menu {
-	margin: 0;
 }
 
 .nav-links ul {
     text-align: right;
-    padding-top: .5em;
-	padding-bottom: .5em;
+    padding-top: 1em;
     padding-right: 2em;
     float:right;
 }
 
+@media only screen and (max-width: 991px) {
+    .nav-links ul {
+        float: left;
+        text-align: left;
+
+    }
+
+    .nav-links li {
+        font-size: 2em;
+        margin-left: 10px !important;
+    }
+    
+    .cta-fill {
+        display: none;
+    }
+
+    .logo img:nth-child(1) {
+        width: 2em;
+    }
+        
+    .logo img:nth-child(2) {
+        margin-left: 8px;
+        padding-right: 8px;
+        width: 6em;
+    }
+
+	#menu-primary-menu {
+		padding: 0px !important;
+		margin: 0px;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
+  }
+  
 .nav-links ul li {
     float:left;
     margin-left: 2em;
@@ -1036,6 +1063,34 @@ nav {
     text-decoration: none;
 }
 
+.nav-links ul a.active {
+    color: #3098F2;
+}
+
+.nav-links ul div.active {
+    width: 1.4em;
+    height: 3px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #3098F2;
+}
+
+.navbar-nav {
+	padding-top: 0 !important;
+	margin: 0 !important;
+}
+
+#menu-primary-menu {
+	padding: 0 32px;
+}
+
+/* .nav-links button.navbar-toggler{
+    
+} */
+.container-fluid {
+    width: 100%;
+}
+
 /* call-to-action button */
 .cta-fill {
     padding: 0;
@@ -1043,10 +1098,10 @@ nav {
 
 .cta-btn {
     display: inline-block;
-    border: 1px solid #3098F2;
-    border-radius: 6px;
-    padding: 1em;
-    background-color: #F0F8FF;
+    background-color: #3098F2;
+    border-radius: 3.45px;
+    padding: 1em 1.5em;
+    color: #F0F8FF;
     width: 100%;
     text-align: center;
     font-weight: 600;
@@ -1058,9 +1113,6 @@ nav {
 /* footer bar */
 footer {
     margin: 1em 0;
-	font-family: 'Inter', sans-serif;
-	color: #252525;
-	font-weight: 400;
 }
 
 /* footer logo */
@@ -1113,13 +1165,82 @@ footer {
     font-size: .75em;
 }
 
-/* HOME PAGE ____________________________________________________________________________________________________ */
-
 .hero-section {
-	background-image: url('img/hero-section.jpg');
+	background-image: url('../../uploads/2024/01/hero-section.jpg');
 	width: 100%;
-    height: 750px;
-	background-repeat:no-repeat;
+    height: 80vh;
+    background-repeat:no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: top;
+}
+
+/* hero section text */
+.hero-text {
+    color: #EDF2EB;
+    width: 80%;
+    margin: 17% 10% 0;
+}
+
+.hero-text h1 {
+
+    font-weight: 800;
+    line-height: 5.5rem;
+}
+
+
+.learn-more .row:nth-child(1) p {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 140% ;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    bottom: 80px;
+}
+
+.learn-more a {
+    width: 200px;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #3098F2;
+    color: #EDF2EB;
+    text-align: center;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.learn-more .row:nth-child(2) a {
+    position: relative;
+    left: 20%;
+    bottom: 80px;
+}
+
+/* PLEASE MAKE IT SIMPLE */
+
+.card-group {
+    position: relative;
+    top: -50px;
+    height: 25vh;
+    width: 300px;
+    border-radius: 3.447px;
+}
+
+.card-group:nth-child(1), .card-group:nth-child(2) {
+    margin-right: 20px;
+}
+
+.card-group:nth-child(1){
+    background-color: #F20505;
+}
+
+.card-group:nth-child(2) {
+    background-color: #80BF50;
+}
+
+.card-group:nth-child(3) {
+    width: 500px;
+    background-color: #F2A007;
 }
