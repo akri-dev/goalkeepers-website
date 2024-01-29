@@ -24,8 +24,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'goalkeepers' ); ?></a>
 	<!-- navigation bar -->
-	<header>
-        <nav class="navbar navbar-expand-lg container justify-content-center">
+	<header class="container">
+        <nav class="navbar navbar-expand-lg justify-content-center">
             <div class="container-fluid row">
                 <div class="navbar-brand col-lg-3 logo justify-content-between">
                     <a href="index.php">
@@ -37,14 +37,11 @@
                 </div>
                 
                 <div class="collapse navbar-collapse col-lg-9 nav-links justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mb-4">
                         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></li>
                     </ul>
                     <div class="cta-fill"><a href="index.html" class="cta-btn">Contact Us</a></div>
-                  </div>
-                  
-                </div>  
-              </nav>
+                </div> 
             </div>
         </nav>
     </header>    
