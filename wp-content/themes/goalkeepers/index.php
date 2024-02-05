@@ -47,7 +47,7 @@ get_header();
                         <p class="card-body">Short description</p>
                         <img src="<?php bloginfo('template_directory');?>/img/card-image-2.jpg" class="img-fluid" alt="Seminar proper">
                     </div>
-                    <div class="col-6 card-group">
+                    <div class="card-group">
                         <h5 class="card-header">Top Program</h2>
                         <p class="card-body">Short description</p>
                         <img src="<?php bloginfo('template_directory');?>/img/card-image-3-landscape.jpg" class="img-fluid" id="responsive-card-image-one" alt="Team-building activity">
@@ -55,8 +55,13 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="about-section">
-                Hi
+            <div class="about-section container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-center"><img src="<?php bloginfo('template_directory');?>/img/about-hug.jpg" alt="two people hugging" class="img-fluid"></div>
+                    <div class="col-lg-6 text-center">
+                        <h3 class="expertise-text"></h3>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- #main -->

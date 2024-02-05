@@ -973,7 +973,6 @@ textarea {
 /* CSS Reset */
 body {
     padding: 0;
-    box-sizing: border-box;
     outline: none;
     border: none;
     font-family: 'Inter', sans-serif !important;
@@ -1231,6 +1230,7 @@ footer {
     border-radius: 3.447px !important;
     padding: calc(var(--bs-gutter-x)) !important;
     flex-direction: column !important;
+	display: flex !important;
 }
 
 .card-header {
@@ -1358,14 +1358,24 @@ footer {
     .card-section{
         margin-top: calc(var(--bs-gutter-x));
     }
-}
 
-@media only screen and (max-width: 767px) {
 	.card-groupings {
 		flex-direction: column;
 	}
 
-    #responsive-card-image-one {
+	.card-group {
+		width: 300px !important;
+		top: 0;
+        margin-right: 0px !important;
+    }
+
+	.card-group:nth-child(1), 
+	.card-group:nth-child(2),
+	.card-group:nth-child(3) {
+        margin-bottom: calc(var(--bs-gutter-x));
+	}
+
+	#responsive-card-image-one {
         display: none;
     }
 
@@ -1373,11 +1383,13 @@ footer {
         display: block;
     }
 
-    .card-group {
-		width: 300px !important;
-		top: 0;
-        margin-right: 0px !important;
-    }
+	.col-lg-6 {
+		margin-bottom: calc(var(--bs-gutter-x));
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
 
     .learn-more .row:nth-child(1) p {
         font-size: .85rem;
