@@ -113,6 +113,10 @@ get_header();
                     </div>
                 </div>
             </div>
+            <div class="brands">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </main>
         <!-- #main -->
 
