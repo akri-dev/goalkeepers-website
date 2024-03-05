@@ -1409,3 +1409,21 @@ footer {
         padding: 0 2.4rem;
     }
 }
+
+.expertise-text {
+	font-weight: 700;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 3em;
+}
+
+.team-text {
+	font-weight: 900;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 17em;
+	line-height: 1em;
+}
+
+.team-caption-text {
+	margin-top: -1em;
+}
+

@@ -55,11 +55,61 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="about-section container">
+            <div class="about-section container mb-5">
                 <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-center"><img src="<?php bloginfo('template_directory');?>/img/about-hug.jpg" alt="two people hugging" class="img-fluid"></div>
-                    <div class="col-lg-6 text-center">
-                        <h3 class="expertise-text"></h3>
+                    <div class="col-lg-6 d-flex justify-content-center"><img src="<?php bloginfo('template_directory');?>/img/about-hug.jpg" alt="two people hugging" class="object-fit-cover img-fluid"></div>
+                    <div class="col-lg-6 text-start">
+                        <h3 class="expertise-text">
+                        Our expertise lies in crafting unforgettable experiences that unite teams and promote collaboration as adept team-building facilitators.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-12 mt-4 text-center w-75">
+                        <h3 class="expertise-sub-text">
+                        A group of people doesn&apos;t have to rely on each other to get what they want, but the TEAM must depend on each other to achieve their goals.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt-4 text-center">
+                        <h3 class="team-sub-text fs-1 fw-bolder">
+                        We are all about TEAM.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row team-container">
+                    <div class="col-lg-3 text-center">
+                        <h1 class="team-text">
+                        T
+                        </h1>
+                        <h2 class="team-caption-text">
+                        Together
+                        </h2>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <h1 class="team-text">
+                        E
+                        </h1>
+                        <h2 class="team-caption-text">
+                        Everyone
+                        </h2>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <h1 class="team-text">
+                        A
+                        </h1>
+                        <h2 class="team-caption-text">
+                        Achieves
+                        </h2>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <h1 class="team-text">
+                        M
+                        </h1>
+                        <h2 class="team-caption-text">
+                        More
+                        </h2>
                     </div>
                 </div>
             </div>
