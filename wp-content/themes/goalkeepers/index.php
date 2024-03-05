@@ -122,6 +122,21 @@ get_header();
                     </div>
                 </div>
             </div>
+            <div class="testimonials mt-5">
+                <div class="inner-brands container pt-5 pb-5">
+                    <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
+                    <div class="row">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img1.jpg" alt="testimonial of a client" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img2.jpg" alt="testimonial of a client" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img3.jpg" alt="testimonial of a client" class="col-lg-6">
+                    </div>
+                    <div class="row">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img4.jpg" alt="testimonial of a client" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img5.jpg" alt="testimonial of a client" class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+            
         </main>
         <!-- #main -->
 
