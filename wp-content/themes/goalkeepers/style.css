@@ -1387,6 +1387,14 @@ footer {
 		margin-bottom: calc(var(--bs-gutter-x));
 	}
 
+	.team-container .team-text {
+		font-size: 7em;
+	}
+
+	.team-caption-text {
+		font-size: 1em;
+	}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1431,9 +1439,23 @@ footer {
 	background-color: #3098f2;
 }
 
-.inner-brands h1 {
-	color: #EDF2EB;
+.inner-brands h1, .inner-testimonials h1, .inner-coaches h1 {
 	font-weight: 700;
 	font-family: 'Inter', sans-serif !important;
 	font-size: 4em;
+}
+
+.inner-brands h1 {
+	color: #EDF2EB;
+}
+
+.coaches {
+	background-color: #5FBF50;
+}
+
+
+@media only screen and (max-width: 496px) {
+	.inner-brands h1, .inner-testimonials h1, .inner-coaches h1 {
+		font-size: 2.5em;
+	}
 }

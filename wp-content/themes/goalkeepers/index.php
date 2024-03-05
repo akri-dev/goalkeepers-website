@@ -79,7 +79,7 @@ get_header();
                     </div>
                 </div>
                 <div class="row team-container">
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-3 text-center">
                         <h1 class="team-text">
                         T
                         </h1>
@@ -87,7 +87,7 @@ get_header();
                         Together
                         </h2>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-3 text-center">
                         <h1 class="team-text">
                         E
                         </h1>
@@ -95,7 +95,7 @@ get_header();
                         Everyone
                         </h2>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-3 text-center">
                         <h1 class="team-text">
                         A
                         </h1>
@@ -103,7 +103,7 @@ get_header();
                         Achieves
                         </h2>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-sm-3 text-center">
                         <h1 class="team-text">
                         M
                         </h1>
@@ -113,7 +113,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="brands mt-5">
+            <div class="brands mt-5 pb-4">
                 <div class="inner-brands container pt-5 pb-5">
                     <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
                     <div class="row">
@@ -123,18 +123,27 @@ get_header();
                 </div>
             </div>
             <div class="testimonials mt-5">
-                <div class="inner-brands container pt-5 pb-5">
-                    <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
+                <div class="inner-testimonials container pt-4 pb-5">
+                    <h1 class="text-uppercase text-center pb-4">Testimonials</h1>
                     <div class="row">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img1.jpg" alt="testimonial of a client" class="col-lg-6">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img2.jpg" alt="testimonial of a client" class="col-lg-6">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img3.jpg" alt="testimonial of a client" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img1.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img2.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img3.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
                     </div>
-                    <div class="row">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img4.jpg" alt="testimonial of a client" class="col-lg-6">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img5.jpg" alt="testimonial of a client" class="col-lg-6">
+                    <div class="row d-flex justify-content-center">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img4.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img5.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
                     </div>
                 </div>
+            </div>
+            <div class="coaches">
+                <div class="inner-coaches container pt-4 pb-4 text-center">
+                    <h1 class="text-uppercase pt-4">Meet Our Stellar Team of Coaches</h1>
+                    <h2 class="coaches-sub-text">
+                        Our team comprises top-tier Coaches, each a proven expert in their field. Diverse backgrounds converge, forming a powerhouse of competence and excellence.
+                    </h2>
+                </div>
+                <img src="<?php bloginfo('template_directory');?>/img/team-coaches.jpg" alt="team of coaches" class="img-liquid object-fit-cover w-100">
             </div>
             
         </main>
