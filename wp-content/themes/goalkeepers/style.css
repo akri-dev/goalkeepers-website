@@ -1427,3 +1427,13 @@ footer {
 	margin-top: -1em;
 }
 
+.brands {
+	background-color: #3098f2;
+}
+
+.inner-brands h1 {
+	color: #EDF2EB;
+	font-weight: 700;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 4em;
+}

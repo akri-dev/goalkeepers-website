@@ -113,9 +113,14 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="brands">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="brands mt-5">
+                <div class="inner-brands container pt-5 pb-5">
+                    <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
+                    <div class="row">
+                        <img src="<?php bloginfo('template_directory');?>/img/brand-group1.jpg" alt="group of brands collaborated" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/brand-group2.jpg" alt="group of brands collaborated" class="col-lg-6">
+                    </div>
+                </div>
             </div>
         </main>
         <!-- #main -->
