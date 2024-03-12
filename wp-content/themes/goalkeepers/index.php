@@ -145,7 +145,9 @@ get_header();
                 </div>
                 <img src="<?php bloginfo('template_directory');?>/img/team-coaches.jpg" alt="team of coaches" class="img-liquid object-fit-cover w-100">
             </div>
-            
+            <div class="contact-form">
+                
+            </div>
         </main>
         <!-- #main -->
 
