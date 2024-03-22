@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="contact-form container">
-        <div class="img-contact-person w-75 h-100">
-            <div class="contact-form-text">
-                <h1>Connect With Us for Team-building.</h1>
-                <p>Forge Stronger Teams: Connect with Us for Unparalleled Team-building Experiences!</p>
-            </div>
-        </div>
-        <div class="contact-form-card">
-            <form action="#" method="post">
-                <input type="text" name="prospect_name" placeholder="Name">
-                <input type="text" name="prospect_fb_messenger" placeholder="Facebook Messenger">
-                <input type="text" name="prospect_email" id="prospect-email" placeholder="Email Address">
-                <input type="text" name="prospec_start_date" id="prospect-start-date" placeholder="Booking Start Date" onfocus="(this.type='date')" onfocusout="(this.type='text')">
-                <input type="text" name="prospect_end_date" id="prospect-end-date" placeholder="Booking End Date" onfocus="(this.type='date')" onfocusout="(this.type='text')">
-
-                <textarea name="prospect_message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            </form>
+    <div class="mt-5 mb-5"></div>
+    <div class="contact-form container d-flex">
+        <div class="row">
+                <div class="img-contact-person p-5">
+                    <div class="contact-form-text">
+                        <h1 >Connect with Us<br>for Team-building.</h1>
+                        <p>Forge Stronger Teams: Connect with Us for<br>Unparalleled Team-building Experiences!</p>
+                    </div>
+                </div>
+                <div class="contact-form-card w-50 rounded-5 p-5">
+                    <form action="#" method="post">
+                        <input type="text" name="prospect_name" placeholder="Name" class="rounded-2 p-3 w-100">
+                        <input type="text" name="prospect_fb_messenger" placeholder="Facebook Messenger" class="rounded-2 p-3 w-100">
+                        <input type="text" name="prospect_email" id="prospect-email" placeholder="Email Address" class="rounded-2 p-3 w-100">
+                        <div class="booking-container d-flex justify-content-between">
+                            <input type="text" name="prospec_start_date" id="prospect-start-date" placeholder="Booking Start Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2 p-3">
+                            <input type="text" name="prospect_end_date" id="prospect-end-date" placeholder="Booking End Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2 p-3">
+                        </div>
+                        <textarea name="prospect_message" id="" cols="30" rows="5" placeholder="Message" class="rounded-2 p-3 mb-1 w-100"></textarea>
+                        <button class="p-3 rounded-2 px-5 ">Send Message</button>
+                    </form>
         </div>
     </div>
 </body>

@@ -1279,6 +1279,8 @@ footer {
 }
 
 @media only screen and (max-width: 1199px) {
+	.contact-form-card 
+
     .learn-more .row:nth-child(1) p {
         font-size: 1.15rem;
     }
@@ -1461,15 +1463,69 @@ footer {
 }
 
 .img-contact-person {
-	background-image: url('img/solo-person.jpg');
+	background-image: url('img/solo-person.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	height: 0;
-    padding-top: 52.83%
+	height: 820px;
+	width: 80%;
+	border-radius: 80px;
 }
+
+.contact-form-text {
+	position: relative;
+	top: 20rem;
+}
+
 
 .contact-form input {
 	display: block;
 	font-family: 'Inter', sans-serif !important;
+}
+
+
+.contact-form-text h1{
+	font-size: 3.2rem;
+	font-weight: 800;
+	font-family: 'Inter', sans-serif !important;
+	margin: 0 0 .5rem;
+	line-height: 3rem;
+}
+
+.contact-form-text p{
+	font-size: 1.8rem;
+	line-height: 2rem;
+	font-weight: 500;
+	font-family: 'Inter', sans-serif !important;
+}
+
+.contact-form-card {
+	background-color: #FFF;
+	position: relative;
+	float: right;
+	top: -43.2rem;
+	left: 40rem;
+}
+
+.contact-form-card input::placeholder, .contact-form-card textarea::placeholder {
+	color: #252525;
+	opacity: 1;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 500;
+	font-size: .8rem;
+	padding-left: .5rem;
+}
+
+.contact-form-card input {
+	margin-bottom: 1rem;
+}
+
+.contact-form-card button{
+	background-color: #5fbf50;
+	color: #edf2eb;
+	font-weight: 600;
+}
+
+.booking-container input{
+	width: 48%;
 }
