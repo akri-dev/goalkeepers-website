@@ -117,22 +117,22 @@ get_header();
                 <div class="inner-brands container pt-5 pb-5">
                     <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
                     <div class="row">
-                        <img src="<?php bloginfo('template_directory');?>/img/brand-group1.jpg" alt="group of brands collaborated" class="col-lg-6">
-                        <img src="<?php bloginfo('template_directory');?>/img/brand-group2.jpg" alt="group of brands collaborated" class="col-lg-6">
+                        <img src="<?php bloginfo('template_directory');?>/img/brand-group1.jpg" alt="group of brands collaborated" class="col-lg-6 testimonial-client">
+                        <img src="<?php bloginfo('template_directory');?>/img/brand-group2.jpg" alt="group of brands collaborated" class="col-lg-6 testimonial-client">
                     </div>
                 </div>
             </div>
             <div class="testimonials mt-5">
                 <div class="inner-testimonials container pt-4 pb-5">
                     <h1 class="text-uppercase text-center pb-4">Testimonials</h1>
-                    <div class="row">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img1.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img2.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img3.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
+                    <div class="row d-flex justify-content-center">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img1.jpg" alt="testimonial of a client" class="col-lg-4 mb-4 testimonial-client">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img2.jpg" alt="testimonial of a client" class="col-lg-4 mb-4 testimonial-client">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img3.jpg" alt="testimonial of a client" class="col-lg-4 mb-4 testimonial-client">
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img4.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
-                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img5.jpg" alt="testimonial of a client" class="col-lg-4 mb-4">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img4.jpg" alt="testimonial of a client" class="col-lg-4 mb-4 testimonial-client">
+                        <img src="<?php bloginfo('template_directory');?>/img/testimonial-img5.jpg" alt="testimonial of a client" class="col-lg-4 mb-4 testimonial-client">
                     </div>
                 </div>
             </div>
@@ -145,8 +145,26 @@ get_header();
                 </div>
                 <img src="<?php bloginfo('template_directory');?>/img/team-coaches.jpg" alt="team of coaches" class="img-liquid object-fit-cover w-100">
             </div>
-            <div class="contact-form">
-                
+            <div class="contact-form container justify-content-center">
+                <div class="img-contact-person">
+                    <div class="contact-form-text">
+                        <h1>Connect with Us<br>for Team-building.</h1>
+                        <p>Forge Stronger Teams: Connect with Us for<br>Unparalleled Team-building Experiences!</p>
+                    </div>
+                    <div class="contact-form-card w-50 rounded-5 p-5">
+                        <form action="#" method="post">
+                            <input type="text" name="prospect_name" placeholder="Name" class="rounded-2 w-100">
+                            <input type="text" name="prospect_fb_messenger" placeholder="Facebook Messenger" class="rounded-2 w-100">
+                            <input type="text" name="prospect_email" id="prospect-email" placeholder="Email Address" class="rounded-2 w-100">
+                            <div class="booking-container d-flex justify-content-between">
+                                <input type="text" name="prospect_start_date" id="prospect-start-date" placeholder="Booking Start Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2">
+                                <input type="text" name="prospect_end_date" id="prospect-end-date" placeholder="Booking End Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2 ">
+                            </div>
+                            <textarea name="prospect_message" id="" cols="30" rows="5" placeholder="Message" class="rounded-2 mb-1 w-100"></textarea>
+                            <div class="wrapper-button-contact d-flex justify-content-center"><button class="rounded-2 px-5 pt-3 pb-3 ">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- #main -->
