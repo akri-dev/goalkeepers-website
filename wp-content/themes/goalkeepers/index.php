@@ -152,16 +152,22 @@ get_header();
                         <p>Forge Stronger Teams: Connect with Us for<br>Unparalleled Team-building Experiences!</p>
                     </div>
                     <div class="contact-form-card w-50 rounded-5 p-5">
-                        <form action="#" method="post">
-                            <input type="text" name="prospect_name" placeholder="Name" class="rounded-2 w-100">
-                            <input type="text" name="prospect_fb_messenger" placeholder="Facebook Messenger" class="rounded-2 w-100">
-                            <input type="text" name="prospect_email" id="prospect-email" placeholder="Email Address" class="rounded-2 w-100">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="7706cdd8-0071-499d-8fc6-13b07d5d4732">
+
+                            <input type="text" name="name" placeholder="Name" class="rounded-2 w-100" required>
+                            <input type="text" name="Facebook_Messenger" placeholder="Facebook Messenger" class="rounded-2 w-100" required>
+                            <input type="email" name="email" id="prospect-email" placeholder="Email Address" class="rounded-2 w-100" required>
                             <div class="booking-container d-flex justify-content-between">
-                                <input type="text" name="prospect_start_date" id="prospect-start-date" placeholder="Booking Start Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2">
-                                <input type="text" name="prospect_end_date" id="prospect-end-date" placeholder="Booking End Date" onfocus="(this.type='date')" onfocusout="(this.type='text')" class="rounded-2 ">
+                                <input type="text" name="Booking_Start_Date" id="prospect-start-date" placeholder="Booking Start Date" onfocus="(this.type='date')" onfocusout="(this.type='date')" class="rounded-2" required>
+                                <input type="text" name="Booking_End_Date" id="prospect-end-date" placeholder="Booking End Date" onfocus="(this.type='date')" onfocusout="(this.type='date')" class="rounded-2 " required>
                             </div>
-                            <textarea name="prospect_message" id="" cols="30" rows="5" placeholder="Message" class="rounded-2 mb-1 w-100"></textarea>
-                            <div class="wrapper-button-contact d-flex justify-content-center"><button class="rounded-2 px-5 pt-3 pb-3 ">Send Message</button></div>
+                            <textarea name="Message" id="" cols="30" rows="5" placeholder="Message" class="rounded-2 mb-1 w-100" required></textarea>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <div class="wrapper-button-contact d-flex justify-content-center">
+                                <button class="rounded-2 px-5 pt-3 pb-3 ">Send Message</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -169,5 +175,11 @@ get_header();
         </main>
         <!-- #main -->
 
+        <script>
+
 <?php
 get_footer();
+
+
+
+
