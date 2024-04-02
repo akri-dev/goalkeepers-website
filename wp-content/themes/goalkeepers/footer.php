@@ -40,7 +40,7 @@
         var btn = document.getElementById("contact-form-modal-btn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("modal")[0];
+        var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
         btn.onclick = function() {

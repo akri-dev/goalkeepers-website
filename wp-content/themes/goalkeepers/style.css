@@ -1475,7 +1475,30 @@ footer {
 	.contact-form {
         display: none !important;
     }
+	
+	#contact-form-display {
+		display: block !important;
+	}
 
+	.img-contact-person {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 770px;
+	}
+
+	.contact-form-text {
+		top: 2.1rem;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.contact-form-card {
+		float: none;
+		top: 2.3rem;
+		left: 0;
+	}
 
 	/* .contact-form-card {
 		left: 25rem;
@@ -1625,6 +1648,10 @@ footer {
         font-size: 3rem;
         line-height: 3.2rem;
     }
+
+	#form-modal-card-size {
+		 width: 70% !important;
+	}
 }
 @media only screen and (max-width: 553px) {
     .hero-section {
@@ -1634,6 +1661,29 @@ footer {
     .learn-more .wrapper {
         padding: 0 2.4rem;
     }
+
+	.contact-form-text h1 {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
+	.contact-form-text p {
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+
+	.contact-form-card input::placeholder, .contact-form-card textarea::placeholder {
+		font-size: .5rem;
+	}
+
+	.contact-form-card input, .contact-form-card textarea {
+		text-indent: .2rem;
+	}
+
+	.wrapper-button-contact button {
+		font-size: .5rem;
+		padding: .5rem 2rem !important;
+	}
 }
 
 .expertise-text {

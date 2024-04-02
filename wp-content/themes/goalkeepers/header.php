@@ -25,13 +25,13 @@
 <div id="contact-form-modal" class="modal">
     <div class="modal-content">
         <div class="close">&times;</div>
-        <div class="contact-form container justify-content-center">
+        <div class="contact-form container justify-content-center" id="contact-form-display">
             <div class="img-contact-person" id="modal-photo">
                 <div class="contact-form-text">
                     <h1>Connect with Us<br>for Team-building.</h1>
                     <p>Forge Stronger Teams: Connect with Us for<br>Unparalleled Team-building Experiences!</p>
                 </div>
-                <div class="contact-form-card w-50 rounded-5 p-5">
+                <div class="contact-form-card w-50 rounded-5 p-5"id="form-modal-card-size">
                     <form action="https://api.web3forms.com/submit" method="POST">
 
                         <input type="hidden" name="access_key" value="7706cdd8-0071-499d-8fc6-13b07d5d4732">
