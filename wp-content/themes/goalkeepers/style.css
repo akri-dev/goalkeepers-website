@@ -1703,9 +1703,11 @@ footer {
   
   /* The Close Button */
   .close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
+	color: #EDF2EB;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 3.5rem;
+	width: 90%;
 	font-weight: bold;
   }
   
