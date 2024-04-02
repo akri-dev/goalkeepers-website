@@ -13,7 +13,7 @@
  */
 get_header();
 ?>
-
+    
 	<main id="primary" class="site-main">
     <div class="hero-section">
                     <div class="container h-100 d-flex align-items-end">
