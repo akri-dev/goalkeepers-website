@@ -56,4 +56,8 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-</article>
+
+	<footer class="entry-footer">
+		<?php goalkeepers_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-<?php the_ID(); ?> -->

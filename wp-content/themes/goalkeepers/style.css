@@ -1767,3 +1767,29 @@ footer {
 	text-decoration: none;
 	cursor: pointer;
   }
+
+  .latest-posts-block .wp-block-latest-posts__post-title {
+	color: #252525;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2rem;
+  }
+
+  .latest-posts-block time {
+	/* color: #5FBF50; */
+	font-weight: 500;
+  }
+  
+  .latest-posts-block {
+	margin-bottom: 4rem;
+  }
+
+  .latest-posts-block .wp-block-latest-posts__post-excerpt a {
+	color: #5FBF50;
+	font-weight: 500;
+	display: block;
+	text-decoration: none;
+  }
+
+  .post-navigation .nav-links {
+    visibility: hidden;
