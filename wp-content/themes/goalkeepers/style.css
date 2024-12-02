@@ -1745,7 +1745,7 @@ footer {
   
   /* Modal Content/Box */
   .modal-content {
-	background-color: rgba(0,0,0,0.4) !important;
+	background-color: rgba(0,0,0,.8) !important;
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80%; /* Could be more or less, depending on screen size */
@@ -1757,7 +1757,7 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	font-size: 3.5rem;
-	width: 90%;
+	width: 95%;
 	font-weight: bold;
   }
   

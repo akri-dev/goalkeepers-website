@@ -26,7 +26,7 @@ get_header();
                                             <div class="row d-flex justify-content-center">
                                                 <p>Drive significant performance improvement, foster collaboration, and lead with impact. Experience the transformative difference for your organization.</p>
                                             </div>
-                                            <div class="row d-flex justify-content-center"><a href="about-us.php">Learn More</a>
+                                            <div class="row d-flex justify-content-center"><a href="about-us">Learn More</a>
                                             </div>
                                         </div>
                                     </div>
