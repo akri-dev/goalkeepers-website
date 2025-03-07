@@ -34,26 +34,6 @@ get_header();
                         </div>
                     </div>
             </div>
-            <div class="container card-section d-flex justify-content-center">
-                <div class="row card-groupings justify-content-center">
-                    <div class="col-3 card-group">
-                        <h5 class="card-header">Top Program</h2>
-                        <p class="card-body">Short description</p>
-                        <img src="<?php bloginfo('template_directory');?>/img/card-image-1.jpg" class="img-fluid" alt="Students playing rock paper scissors">
-                    </div>
-                    <div class="col-3 card-group">
-                        <h5 class="card-header">Top Program</h2>
-                        <p class="card-body">Short description</p>
-                        <img src="<?php bloginfo('template_directory');?>/img/card-image-2.jpg" class="img-fluid" alt="Seminar proper">
-                    </div>
-                    <div class="card-group">
-                        <h5 class="card-header">Top Program</h2>
-                        <p class="card-body">Short description</p>
-                        <img src="<?php bloginfo('template_directory');?>/img/card-image-3-landscape.jpg" class="img-fluid" id="responsive-card-image-one" alt="Team-building activity">
-                        <img src="<?php bloginfo('template_directory');?>/img/card-image-3-mobile.jpg" class="img-fluid" id="responsive-card-image-two" alt="Team-building activity">
-                    </div>
-                </div>
-            </div>
             <div class="about-section container mb-5">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-center"><img src="<?php bloginfo('template_directory');?>/img/about-hug.jpg" alt="two people hugging" class="object-fit-cover img-fluid"></div>
