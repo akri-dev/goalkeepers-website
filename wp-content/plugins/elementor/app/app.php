@@ -10,6 +10,7 @@ use Elementor\Plugin;
 use Elementor\TemplateLibrary\Source_Local;
 use Elementor\User;
 use Elementor\Utils;
+use Elementor\Core\Utils\Promotions\Filtered_Promotions_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -80,6 +81,8 @@ class App extends BaseApp {
 
 		$this->enqueue_assets();
 
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 		// Setup default heartbeat options
 		// TODO: Enable heartbeat.
 		add_filter( 'heartbeat_settings', function( $settings ) {
@@ -103,6 +106,11 @@ class App extends BaseApp {
 			'admin_url' => admin_url(),
 			'login_url' => wp_login_url(),
 			'base_url' => $this->get_base_url(),
+			'promotion' => Filtered_Promotions_Manager::get_filtered_promotion_data(
+				[ 'upgrade_url' => 'https://go.elementor.com/go-pro-theme-builder/' ],
+				'elementor/site-editor/promotion',
+				'upgrade_url'
+			),
 		];
 	}
 
@@ -111,14 +119,14 @@ class App extends BaseApp {
 	}
 
 	/**
-	 * Get Elementor UI theme preference.
+	 * Get Elementor editor theme color preference.
 	 *
-	 * Retrieve the user UI theme preference as defined by editor preferences manager.
+	 * Retrieve the user theme color preference as defined by editor preferences manager.
 	 *
 	 * @since 3.0.0
 	 * @access private
 	 *
-	 * @return string Preferred UI theme.
+	 * @return string Preferred editor theme.
 	 */
 	private function get_elementor_ui_theme_preference() {
 		$editor_preferences = SettingsManager::get_settings_managers( 'editorPreferences' );

@@ -94,6 +94,7 @@ class Modules_Manager {
 			'compatibility-tag',
 			'generator-tag',
 			'elements-color-picker',
+			'elementor-counter',
 			'shapes',
 			'favorites',
 			'admin-top-bar',
@@ -111,10 +112,20 @@ class Modules_Manager {
 			'image-loading-optimization',
 			'kit-elements-defaults',
 			'announcements',
+			'editor-app-bar',
 			'site-navigation',
 			'styleguide',
+			'element-cache',
 			'apps',
+			'home',
+			'link-in-bio',
+			'floating-buttons',
+			'content-sanitizer',
 			'editor-events',
+			'atomic-widgets',
+			'global-classes',
+			'wc-product-editor',
+			'checklist',
 		];
 	}
 

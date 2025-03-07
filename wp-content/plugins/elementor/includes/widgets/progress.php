@@ -73,6 +73,28 @@ class Widget_Progress extends Widget_Base {
 		return [ 'progress', 'bar' ];
 	}
 
+	protected function is_dynamic_content(): bool {
+		return false;
+	}
+
+	/**
+	 * Get style dependencies.
+	 *
+	 * Retrieve the list of style dependencies the widget requires.
+	 *
+	 * @since 3.24.0
+	 * @access public
+	 *
+	 * @return array Widget style dependencies.
+	 */
+	public function get_style_depends(): array {
+		return [ 'widget-progress' ];
+	}
+
+	public function has_widget_inner_wrapper(): bool {
+		return ! Plugin::$instance->experiments->is_feature_active( 'e_optimized_markup' );
+	}
+
 	/**
 	 * Register progress widget controls.
 	 *
@@ -342,6 +364,11 @@ class Widget_Progress extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['title'] ) && empty( $settings['percent']['size'] ) ) {
+			return;
+		}
+
 		$progressbar_id = 'elementor-progress-bar-' . $this->get_id();
 
 		$progress_percentage = is_numeric( $settings['percent']['size'] ) ? $settings['percent']['size'] : '0';
@@ -396,13 +423,13 @@ class Widget_Progress extends Widget_Base {
 
 		if ( ! Utils::is_empty( $settings['title'] ) ) { ?>
 			<<?php Utils::print_validated_html_tag( $settings['title_tag'] ); ?> <?php $this->print_render_attribute_string( 'title' ); ?>>
-				<?php $this->print_unescaped_setting( 'title' ); ?>
+				<?php echo wp_kses_post( $settings['title'] ); ?>
 			</<?php Utils::print_validated_html_tag( $settings['title_tag'] ); ?>>
 		<?php } ?>
 
 		<div <?php $this->print_render_attribute_string( 'wrapper' ); ?>>
 			<div <?php $this->print_render_attribute_string( 'progress-bar' ); ?>>
-				<span <?php $this->print_render_attribute_string( 'inner_text' ); ?>><?php $this->print_unescaped_setting( 'inner_text' ); ?></span>
+				<span <?php $this->print_render_attribute_string( 'inner_text' ); ?>><?php echo wp_kses_post( $settings['inner_text'] ); ?></span>
 				<?php if ( 'show' === $settings['display_percentage'] ) { ?>
 					<span class="elementor-progress-percentage"><?php echo $progress_percentage; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>%</span>
 				<?php } ?>
@@ -422,6 +449,10 @@ class Widget_Progress extends Widget_Base {
 	protected function content_template() {
 		?>
 		<#
+		if ( '' === settings.title && '' === settings.percent.size ) {
+			return;
+		}
+
 		const title_tag = elementor.helpers.validateHTMLTag( settings.title_tag );
 		const progressbar_id = 'elementor-progress-bar-<?php echo esc_attr( $this->get_id() ); ?>';
 
@@ -464,11 +495,11 @@ class Widget_Progress extends Widget_Base {
 		view.addInlineEditingAttributes( 'inner_text' );
 		#>
 		<# if ( settings.title ) { #>
-			<{{ title_tag }} {{{ view.getRenderAttributeString( 'title' ) }}}>{{{ settings.title }}}</{{ title_tag }}>
+			<{{ title_tag }} {{{ view.getRenderAttributeString( 'title' ) }}}>{{ settings.title }}</{{ title_tag }}>
 		<# } #>
 		<div {{{ view.getRenderAttributeString( 'progressWrapper' ) }}}>
 			<div class="elementor-progress-bar" data-max="{{ progress_percentage }}">
-				<span {{{ view.getRenderAttributeString( 'inner_text' ) }}}>{{{ settings.inner_text }}}</span>
+				<span {{{ view.getRenderAttributeString( 'inner_text' ) }}}>{{ settings.inner_text }}</span>
 				<# if ( 'show' === settings.display_percentage ) { #>
 					<span class="elementor-progress-percentage">{{{ progress_percentage }}}%</span>
 				<# } #>
