@@ -34,7 +34,7 @@ get_header();
                         </div>
                     </div>
             </div>
-            <div class="about-section container mb-5">
+            <div class="about-section container mb-5 mt-5">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-center"><img src="<?php bloginfo('template_directory');?>/img/about-hug.jpg" alt="two people hugging" class="object-fit-cover img-fluid"></div>
                     <div class="col-lg-6 text-start">
@@ -91,6 +91,9 @@ get_header();
                         </h2>
                     </div>
                 </div>
+            </div>
+            <div class="services container mb-5 mt-5">
+                <h1 class="text-uppercase text-center pb-4">Our Services</h1>
             </div>
             <div class="brands mt-5 pb-4">
                 <div class="inner-brands container pt-5 pb-5">
