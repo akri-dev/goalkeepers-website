@@ -74,6 +74,10 @@ html {
 /* Sections
 	 ========================================================================== */
 
+section {
+	font-family: 'Inter', sans-serif !important;
+}
+
 /**
  * Remove the margin in all browsers.
  */
@@ -1233,7 +1237,8 @@ footer {
     line-height: 140%;
 }
 
-.learn-more a {
+.learn-more a,
+.program-services a {
     width: 200px;
     display: block;
     padding: 1em;
@@ -1759,9 +1764,12 @@ footer {
 }
 
 .coaches {
-	background-color: #5FBF50;
+	background-color: #8CAA7F;
 }
 
+.services {
+	background-color: #8CAA7F;
+}
 
 @media only screen and (max-width: 496px) {
 	.inner-brands h1, .inner-testimonials h1, .inner-coaches h1 {

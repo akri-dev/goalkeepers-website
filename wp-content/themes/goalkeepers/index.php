@@ -92,10 +92,96 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="services container mb-5 mt-5">
-                <h1 class="text-uppercase text-center pb-4">Our Services</h1>
+            <div class="services pt-5 pb-4">
+                <h1 class="text-uppercase text-center">Programs & Services</h1>
+                <div class="col-lg-12 container text-center">
+                    <h2 class="team-sub-text">
+                    Empowering teams, leaders, and communities through tailored development programs.
+                    </h2>
+                </div>
             </div>
-            <div class="brands mt-5 pb-4">
+            <section class="bg-light pb-4">
+                <div class="container text-center">
+                    <div class="row pt-2 g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/team-building-fin.jpg" class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Team Building</h2>
+                            <p class="card-text">Foster unity, collaboration, and fun through engaging group activities designed to strengthen teamwork.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/Seminar.jpg" class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Seminars & Training</h2>
+                            <p class="card-text">Equip teams and individuals with knowledge, skills, and inspiration through relevant and interactive learning sessions.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/retreat-recollect.jpg" class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Retreats & Recollections</h2>
+                            <p class="card-text">Create space for spiritual reflection, healing, and values formation in peaceful and guided environments.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/camp.jpg" class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Camps & Campus Programs</h2>
+                            <p class="card-text">Engage youth and students in leadership development, values education, and purposeful community-building activities.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/community-1.jpg" class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Community Programs</h2>
+                            <p class="card-text">Promote transformation and empowerment through outreach, sports, livelihood, and holistic life skill programs.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header p-0">
+                            <div><img src="https://goalkeepers.42web.io/wp-content/uploads/2025/01/character.jpg class="w-100" alt="Team Building"></div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="fw-bolder">Character & Values Formation</h2>
+                            <p class="card-text">Build integrity, leadership, and purpose through customized value-based learning for all ages and sectors.</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="mt-4 program-services">
+                        <div class="row d-flex justify-content-center"><a href="our-programs-services">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            <div class="brands pb-4">
                 <div class="inner-brands container pt-5 pb-5">
                     <h1 class="text-uppercase text-center pb-4">Brands we have worked with</h1>
                     <div class="row">
